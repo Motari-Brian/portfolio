@@ -1,0 +1,89 @@
+.contact__container {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+}
+
+.contact__info {
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    grid-template-columns: 300px;
+    margin-left: 2%;
+}
+
+.contact__card {
+    background-color: var(--container-color);
+    border: 1 px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.contact__card-title,
+.contact__card-data {
+    font-size: var(--small-font-size);
+}
+
+.arrow {
+    font-size: 20px;
+    color: var(--title-color);
+}
+
+.contact__card-title {
+    font-weight: var(--font-medium);
+}
+
+.contact__card-data {
+    display: block;
+    margin-bottom: var(--mb-0-25);
+}
+
+.contact__button {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: inline-flex;
+    justify-content: center;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+
+/* For large devices */
+
+@media screen and (max-width: 992px) {
+    .contact__container {
+        column-gap: 3rem;
+    }
+}
+
+
+/* For medium devices */
+
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        display: inline;
+        row-gap: 3rem;
+    }
+    .contact__info {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {}
